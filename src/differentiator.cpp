@@ -67,7 +67,7 @@ bool diff(int argc, char* argv[]){
 
 int main(int argc, char* argv[]){
     
-    if (argc < 4 || (std::strcmp(argv[1], "eval") != 0 && std::strcmp(argv[1], "diff") != 0)) {
+    if (argc < 3 || (std::strcmp(argv[1], "eval") != 0 && std::strcmp(argv[1], "diff") != 0)) {
         std::cout << "Correct command(diff): differentiator diff <expression> by <variable>\n";
         std::cout << "Correct command(eval): differentiator eval <expression>  <variable1>=<value1> <variable2>=<value2> ........\n";
         std::cout<<"smth went wrong\n";
